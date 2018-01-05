@@ -1,5 +1,4 @@
 const lineCHART = document.getElementById("lineChart");
-const barCHART = document.getElementById("barChart");
 
 
 Chart.defaults.global.animation.onComplete = () => {
@@ -8,66 +7,6 @@ Chart.defaults.global.animation.onComplete = () => {
 
 let lineChart = new Chart(lineCHART, {
 	type: 'line',
-	data: {
-		labels: ["January", "February", "March", "April", "May", "June", "July"],
-		datasets: [
-			{
-				label: "My First dataset",
-				fill: false,
-				lineTension: 0.1,
-				backgroundColor: "rgba(75, 192, 192, 0.4)",
-				borderColor: "rgba(75, 192, 192, 1)",
-				borderCapStyle: "butt",
-				borderDash: [],
-				borderDashOffset: 0.0,
-				borderJoinStyle: "miter",
-				pointBorderColor: "rgba(75, 192, 192, 1)",
-				pointBackgroundColor: "#fff",
-				pointBorderWidth: 1,
-				pointHoverRadius: 5,
-				pointHoverBackgroundColor: "rgba(75, 192, 192, 1)",
-				pointHoverBorderColor:"rgba(220, 220, 220, 1)",
-				pointHoverBorderWidth: 2,
-				pointRadius: 1,
-				pointHitRadius: 10,
-				data: [65, 59, 80, 81, 56, 55, 40],
-			},
-				{
-				label: "My Second dataset",
-				fill: true,
-				lineTension: 0.1,
-				backgroundColor: "rgba(75, 75, 192, 0.4)",
-				borderColor: "rgba(75, 72, 192, 1)",
-				borderCapStyle: "butt",
-				borderDash: [],
-				borderDashOffset: 0.0,
-				borderJoinStyle: "miter",
-				pointBorderColor: "rgba(75, 192, 192, 1)",
-				pointBackgroundColor: "#fff",
-				pointBorderWidth: 1,
-				pointHoverRadius: 5,
-				pointHoverBackgroundColor: "rgba(75, 72, 192, 1)",
-				pointHoverBorderColor:"rgba(220, 220, 220, 1)",
-				pointHoverBorderWidth: 2,
-				pointRadius: 1,
-				pointHitRadius: 10,
-				data: [100, 20, 60, 80, 56, 55, 90],
-			}
-		]
-	},
-	options: {
-		scales: {
-			yAxes:[{
-				ticks: {
-					beginAtZero: true
-				}
-			}]
-		}
-	}
-});
-
-let barChart = new Chart(barCHART, {
-	type: 'bar',
 	data: {
 		labels: ["January", "February", "March", "April", "May", "June", "July"],
 		datasets: [
